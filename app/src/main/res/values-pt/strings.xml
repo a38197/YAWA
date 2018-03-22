@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language_code">pt</string>
+    <string name="welcome">Bem-vindo à aplicação YAWA</string>
+    <string name="temperature_format">Temperatura</string>
+    <string name="addCityBtn">Adicionar cidade</string>
+    <string name="action_manage_cities">Gerir cidades</string>
+    <string name="action_settings">Configurações</string>
+    <string name="action_about">Sobre</string>
+    <string name="automatic_update">Atualizar automaticamente?</string>
+    <string name="update_interval_title">Frequência de atualização</string>
+    <string name="rain">Chuva:</string>
+    <string name="clouds">Nuvens:</string>
+    <string name="temperature_min_max">Temperatura (Min/Max):</string>
+    <string name="wind">Vento:</string>
+    <string name="about_lbl_author">Autores</string>
+    <string name="about_lbl_datasource">Fonte de Dados</string>
+    <string name="progress_title">Carregando</string>
+    <string name="progress_message">Aguarde enquanto os dados são carregados</string>
+    <string name="pull_down_to_refresh">Puxe para baixo para atualizar</string>
+    <string name="delete_message">Apagar cidade?</string>
+    <string name="delete_title">Apagar</string>
+    <string name="generic_yes">SIM</string>
+    <string name="generic_no">NÃO</string>
+    <string name="add_city_before_update">Adicione uma cidade primeiro antes de atualizar</string>
+    <string name="cities_updated_with_error">Algumas cidades não foram atualizadas. Tente novamente.</string>
+    <string name="cities_updated">Atualização concluída</string>
+    <string name="preference_update_wifi_only">Atualização apenas por Wifi</string>
+    <string name="no_available_network">Nenhuma rede disponível para as configurações do dispositivo. Verifique a conectividade ou se apenas permite atualizações por Wifi.</string>
+    <string name="receive_notifications">Receber notificações?</string>
+    <string name="notification_from">de</string>
+    <string name="notification_to">até</string>
+    <string name="notification_title">O clima em %1$s mudou</string>
+</resources>

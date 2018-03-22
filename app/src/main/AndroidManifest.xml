@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pt.isel.pdm.yawa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:name=".YawaApplication"
+        android:icon="@mipmap/yawa"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.WeatherDetails" />
+        <activity android:name=".activities.ManageCitiesActivity" />
+        <activity android:name=".activities.settings.SettingsActivity" />
+        <activity android:name=".activities.AboutActivity" />
+        <activity android:name=".activities.AddCityActivity" />
+
+        <provider
+            android:name=".dao.contentprovider.YawaContentProvider"
+            android:authorities="pt.isel.pdm.yawa.provider" />
+
+        <activity android:name=".activities.YawaProviderDebug" />
+
+        <receiver
+            android:name=".broadcastreceiver.UpdateReceiver"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+        <receiver android:name=".broadcastreceiver.LowBatteryStateReceiver"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcastreceiver.OkayBatteryStateReceiver"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+            </intent-filter>
+        </receiver>
+        -->
+        <service
+            android:name=".services.UpdateService"
+            android:enabled="true"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

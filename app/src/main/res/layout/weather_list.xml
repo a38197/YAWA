@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight=".20"
+        android:layout_height="match_parent"
+        android:text="Day Hour"
+        android:id="@+id/txtWeatherDay"/>
+    
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight=".20"
+        android:id="@+id/imgWeatherIcon" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight=".60"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Weather Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWeatherDesc"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Min. Temp."
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtWeatherMinTemp"
+                android:gravity="center"/>
+
+            <TextView
+                android:text="Max. Temp."
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtWeatherMaxTemp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

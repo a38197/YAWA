@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auth_failure_error">Erro de autenticação</string>
+    <string name="network_error">Falha de ligação à Internet</string>
+    <string name="parse_error">Erro de parse</string>
+    <string name="server_error">Erro de servidor</string>
+    <string name="timeout_error">Erro de tempo esgotado</string>
+    <string name="error_city_data">Erro ao obter dados sobre a cidade</string>
+    <string name="error_forecast_data">Erro ao obter dados sobre previsão</string>
+    <string name="error_cities_data">Error ao obter a lista de cidades</string>
+    <string name="error_no_cities_found">Não foram encontradadas cidades. Redefine a sua pesquisa</string>
+    <string name="city_not_found">Cidade não encontrada</string>
+</resources>

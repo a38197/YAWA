@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appid" translatable="false">736dd7c5d2aae4dcf1f74551515e3c02</string>
+    <string name="baseApiUri" translatable="false">http://api.openweathermap.org/data/2.5/</string>
+    <string name="baseImageUri" translatable="false">http://openweathermap.org/img/w/</string>
+    <integer name="defaultValidityForCacheInMs" translatable="false">3600000</integer>
+    <integer name="default_time_picker" translatable="false">0</integer>
+    <string name="unit_preference_key" translatable="false">unit_preference_key</string>
+    <string name="update_interval_key" translatable="false">update_interval_key</string>
+    <string name="update_interval_onoff_key" translatable="false">update_interval_onoff_key</string>
+    <string name="update_interval_default" translatable="false">15</string>
+    <string name="receive_notifications_onoff_key" translatable="false">receive_notifications_onoff_key</string>
+    <string name="notification_from_key" translatable="false">notification_from_key</string>
+    <string name="notification_to_key" translatable="false">notification_to_key</string>
+    <integer name="temp_round_places">2</integer>
+    <string name="saved_cities_list_key" translatable="false">saved_cities_list_key</string>
+    <string name="current_location_key" translatable="false">current_location_key</string>
+    <string name="saved_cities_pref_file" translatable="false">"saved_cities_pref_file"</string>
+    <string name="preference_update_wifi_only_key" translatable="false">wifi_only_key</string>
+    <string name="debug_random_temp_key" translatable="false">debug_random_temp_key</string>
+    <string name="battery_status_key" translatable="false">battery_status_key</string>
+    <integer name="battery_low_threshold">15</integer>
+</resources>

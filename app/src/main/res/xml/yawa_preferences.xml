@@ -1,0 +1,67 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="@string/temperature_default"
+        android:dialogTitle="@string/temperature_format"
+        android:entries="@array/temperature_array_entries"
+        android:entryValues="@array/temperature_array_values"
+        android:key="@string/unit_preference_key"
+        android:summary="%s"
+        android:title="@string/temperature_format" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/update_interval_onoff_key"
+        android:title="@string/automatic_update" />
+    <ListPreference
+        android:defaultValue="@string/update_interval_default"
+        android:dependency="@string/update_interval_onoff_key"
+        android:dialogTitle="@string/update_interval_title"
+        android:entries="@array/update_interval_entries"
+        android:entryValues="@array/update_interval_values_in_minutes"
+        android:key="@string/update_interval_key"
+        android:summary="%s"
+        android:title="@string/update_interval_title" />
+    <CheckBoxPreference
+        android:key="@string/preference_update_wifi_only_key"
+        android:title="@string/preference_update_wifi_only"
+        android:dependency="@string/update_interval_onoff_key"
+        android:defaultValue="false"/>
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/receive_notifications_onoff_key"
+        android:title="@string/receive_notifications" />
+    <!--<pt.isel.pdm.yawa.activities.settings.TimePickerPreference-->
+    <!--android:dependency="@string/receive_notifications_onoff_key"-->
+    <!--android:title="@string/notification_from"-->
+    <!--android:key="@string/notification_from_key"-->
+    <!--android:dialogTitle="@string/notification_from"-->
+    <!--android:defaultValue="@integer/default_time_picker"-->
+    <!--android:summary="%i"/>-->
+    <!--<pt.isel.pdm.yawa.activities.settings.TimePickerPreference-->
+    <!--android:dependency="@string/receive_notifications_onoff_key"-->
+    <!--android:title="@string/notification_to"-->
+    <!--android:key="@string/notification_to_key"-->
+    <!--android:dialogTitle="@string/notification_from"-->
+    <!--android:defaultValue="@integer/default_time_picker"-->
+    <!--android:summary="%s"/>-->
+    <ListPreference
+        android:defaultValue="0"
+        android:dependency="@string/receive_notifications_onoff_key"
+        android:entries="@array/notification_entries_from_to"
+        android:entryValues="@array/notification_values_from_to"
+        android:key="@string/notification_from_key"
+        android:summary="%s"
+        android:title="@string/notification_from" />
+    <ListPreference
+        android:defaultValue="0"
+        android:dependency="@string/receive_notifications_onoff_key"
+        android:entries="@array/notification_entries_from_to"
+        android:entryValues="@array/notification_values_from_to"
+        android:key="@string/notification_to_key"
+        android:summary="%s"
+        android:title="@string/notification_to" />
+    <CheckBoxPreference
+        android:key="@string/debug_random_temp_key"
+        android:title="@string/debug_random_temp_title"
+        android:defaultValue="false"/>
+</PreferenceScreen>

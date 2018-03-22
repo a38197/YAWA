@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auth_failure_error">Authentication Failure Error</string>
+    <string name="network_error">No Internet connection</string>
+    <string name="parse_error">Parse Error</string>
+    <string name="server_error">Server Error</string>
+    <string name="timeout_error">Timeout Error</string>
+    <string name="error_city_data">Error getting city data</string>
+    <string name="error_forecast_data">Error getting forecast data</string>
+    <string name="error_cities_data">Error getting cities collection</string>
+    <string name="error_no_cities_found">No cities found. Redefine your search</string>
+    <string name="city_not_found">City not found</string>
+</resources>
